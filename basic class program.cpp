@@ -1,23 +1,28 @@
-//basic class program
+//////// Basic class program 
 #include<iostream>
 using namespace std;
-int sum();
 class rect
 {
-	int x,y,z,s;
+	private :
+		int l,b,a;
 	public:
-		int sum()
+		void input()
 		{
-			cout <<"Enter the 3 no.s";
-			cin >>x>>y>>z;
-			s=x+y+z;
-			cout<<s;
-		}
+			cout <<"enter the value of length";
+			cin >>l;
+			cout <<"enter the value of breadth";
+			cin >>b;
+		};
+		void output()
+		{
+			a=l*b;
+			cout <<"area of rectangle is :"<<a;
+		};
 };
-int main()
-{
-	rect a;
-	a.sum();
-	return 0;
-	
+int  main()
+{	
+
+	rect x;
+	x.input();
+	x.output();	
 }
